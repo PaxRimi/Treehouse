@@ -1,5 +1,95 @@
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Roboto Slab', serif;*/
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.App{
+  font-family: 'Roboto Slab', serif;
+}
+
+header{
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 20px 0;
+}
+
+header .container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  height: 29px;
+  align-items: center;
+}
+
+header .logo span{
+  width: 30px;
+  height: 29px;
+  background-color: #7cc576;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
+}
+
+header .logo p {
+  color: #555555;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+header nav{
+  display: none;
+}
+
+.fa-bars{
+  font-size: 30px;
+}
+
+ul{
+  list-style-type: square;
+}
+
+
+@media screen and (min-width: 600px){
+  header nav{
+    display: block;
+  }
+
+  header li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  header li a{
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+    line-height: 41px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  header li a:hover{
+    text-decoration: underline;
+  }
+
+  .fa-bars{
+    display: none;
+  }
 }
