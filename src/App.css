@@ -120,6 +120,47 @@ ul{
   background: linear-gradient(0deg, rgba(43,128,34,1) 0%, rgba(124,197,118,1) 100%);
 }
 
+.service {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.service .container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service h2 {
+  font-size: 25px;
+}
+
+.service p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.service_icon div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 274px;
+  margin: 10px auto;
+}
+
+.service_icon div h3 {
+  margin: 5px 0;
+}
+
+.service_icon div p {
+  text-align: center;
+}
+
+
 
 @media screen and (min-width: 600px){
   header nav{
@@ -167,6 +208,29 @@ ul{
     font-size: 20px;
   }
 
+  .service h2 {
+    font-size: 35px;
+  }
+
+  .service h2+p {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .service_icon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .service_icon div h3 {
+    text-transform: uppercase;
+  }
+
+  .service_icon div:last-of-type img{
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -178,5 +242,20 @@ ul{
     font-size: 60px;
     width: 520px;
     text-align: center;
+    text-transform: uppercase;
+  }
+
+  .service h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  .service h2+p {
+    margin-bottom: 80px;
+  }
+
+  .service_icon div h3 {
+    margin-top: 40px;
+    margin-bottom: 16px;
   }
 }
