@@ -160,7 +160,96 @@ ul{
   text-align: center;
 }
 
+.moreInfo {
+  width: 100%;
+}
 
+.moreInfo .container{
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.moreInfo .rack{
+  display: none;
+}
+
+.moreInfo_content{
+  background-image: url("./img/Background_Sea.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  position: relative;
+}
+
+.moreInfo_content:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.5);
+}
+
+.moreInfo_content h2{
+  font-size: 25px;
+  z-index: 3;
+  text-align: center;
+}
+
+.moreInfo_content h2 span{
+  color: #7cc576;
+  margin-right: 5px;
+}
+
+.moreInfo_content p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  z-index: 3;
+}
+
+.moreInfo_content li {
+  z-index: 3;
+  list-style-type: none;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.moreInfo_content li img{
+  margin-right: 10px;
+}
+
+.moreInfo_content li .chechMark{
+  position: absolute;
+  left: 8px;
+}
+
+.moreInfo_content button{
+  background-color: #7cc576;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: #7cc576;
+  text-transform: uppercase;
+  z-index: 3;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.moreInfo_content button:hover{
+  background: rgb(43,128,34);
+  background: linear-gradient(0deg, rgba(43,128,34,1) 0%, rgba(124,197,118,1) 100%);
+}
 
 @media screen and (min-width: 600px){
   header nav{
@@ -231,6 +320,36 @@ ul{
   .service_icon div:last-of-type img{
     margin-bottom: 10px;
   }
+
+
+  .moreInfo_content{
+    padding: 50px;
+    align-items: flex-start;
+  }
+
+  .moreInfo_content h2{
+    font-size: 35px;
+    text-align: left;
+  }
+
+  .moreInfo_content p{
+    font-size: 16px;
+    margin: 30px 0;
+    width: 490px;
+    text-align: left;
+  }
+
+  .moreInfo_content li {
+    margin-bottom: 20px;
+  }
+
+  .moreInfo_content button{
+    width: 168px;
+    height: 55px;
+    border-radius: 25px;
+    font-size: 17px;
+
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -257,5 +376,33 @@ ul{
   .service_icon div h3 {
     margin-top: 40px;
     margin-bottom: 16px;
+  }
+
+  .moreInfo{
+    background-color: #e9e9e9;
+  }
+
+  .moreInfo .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .moreInfo_content{
+    padding: 100px;
+    width: 70%;
+    position: relative;
+  }
+
+  .moreInfo .rack{
+    width: 30%;
+    height: 416px;
+    display: block;
+    position: relative;
+  }
+
+  .moreInfo .rack img{
+    position: absolute;
+    right: -195px;
   }
 }
