@@ -251,6 +251,86 @@ ul{
   background: linear-gradient(0deg, rgba(43,128,34,1) 0%, rgba(124,197,118,1) 100%);
 }
 
+.project {
+  width: 100%;
+  padding: 20px 0;
+  color: rgb(34, 34, 34);
+}
+
+.project .container{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.project .container h2{
+  font-size: 25px;
+  text-align: center;
+}
+
+.project .container > p {
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0;
+  color:rgb(119, 119, 119);
+}
+
+.project_Content{
+  padding: 0 10px;
+}
+
+.project_Content h3 {
+  font-size: 21px;
+}
+
+.project_Content p {
+  font-size: 15px;
+  margin: 5px 0;
+  color: rgb(119, 119, 119);
+}
+
+.project_ContentLi {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.contentLi_img{
+  width: 67px;
+  height: 68px;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentLi_txt {
+  width: 60%;
+}
+
+.project_Content button{
+  width: 160px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  color: #7cc576;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.project_Content button:hover {
+  border: 2px solid #7cc576;
+  border-radius: 20px;
+}
+
+.project_image {
+  display: none;
+}
+
 @media screen and (min-width: 600px){
   header nav{
     display: block;
@@ -350,6 +430,23 @@ ul{
     font-size: 17px;
 
   }
+
+  .project .container h2{
+    font-size: 35px;
+  }
+
+  .project h2, .project h3, .project h4 {
+    text-transform: uppercase;
+  }
+
+  .project .container > p {
+    font-size: 20px;
+  }
+
+  .project_Content p {
+    font-size: 16px;
+    width: 415px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -405,4 +502,33 @@ ul{
     position: absolute;
     right: -195px;
   }
+
+  .project .container h2{
+    font-size: 40px;
+  }
+
+  .project .container > p {
+    margin-bottom: 80px;
+  }
+
+  .project .container > div {
+    display: flex;
+    justify-content: flex-end;
+    height: 600px;
+  }
+
+  .project_image {
+    display: block;
+    width: 50%;
+    background-image: url("./img/projectTablet.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project_Content{
+    width: 50%;
+    margin-left: 200px;
+  }
+
 }
