@@ -331,6 +331,63 @@ ul{
   display: none;
 }
 
+.ourValues{
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.ourValues .container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.ourValues h2{
+  font-size: 25px;
+  text-align: center;
+}
+
+.ourValues .container > p{
+  font-size: 17px;
+  margin: 5px 0;
+  color: rgb(119, 119, 119);
+  text-align: center;
+}
+
+.ourValues__Content{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ourValues__Content div{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourValues__Content div .contentIcon{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 2px solid #777777;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourValues__Content div .contentIcon:not(.star){
+  padding-right: 5px;
+}
+
+.ourValues__Content p {
+  font-size: 14px;
+  color: rgba(119, 119, 119, 255);
+}
+
 @media screen and (min-width: 600px){
   header nav{
     display: block;
@@ -447,6 +504,25 @@ ul{
     font-size: 16px;
     width: 415px;
   }
+
+  .ourValues h2{
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+
+  .ourValues .container > p {
+    font-size: 20px;
+  }
+
+  .ourValues__Content h3{
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .ourValues__Content p {
+    width: 290px;
+    margin: 10px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -529,6 +605,42 @@ ul{
   .project_Content{
     width: 50%;
     margin-left: 200px;
+  }
+
+  .ourValues{
+    padding: 50px 0;
+  }
+
+  .ourValues h2{
+    font-size: 40px;
+  }
+
+  .ourValues__Content{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ourValues__Content div {
+    margin: 0;
+  }
+
+  .ourValues__Content h3{
+    margin: 15px 0;
+  }
+
+  .ourValues__Content .contentIcon{
+    position: relative;
+  }
+
+  .ourValues__Content .contentIcon:not(.star):after{
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    background-color: #777777;
+    position: absolute;
+    left: 110px;
   }
 
 }
